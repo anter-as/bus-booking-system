@@ -15,8 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('name', length: 100);
             $table->foreignId('bus_id');
-            $table->foreignId('start_station_id');
-            $table->foreignId('end_station_id');
             $table->dateTime('starts_at');
             $table->timestamps();
         });

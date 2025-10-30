@@ -5,11 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Station extends Model
+class TripStation extends Model
 {
     use HasFactory;
 
-    public $timestamps = false;
-
-    protected $fillable = ['name', 'order'];
+    protected $fillable = ['trip_id', 'station_id', 'order'];
 }

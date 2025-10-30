@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('buses', function (Blueprint $table) {
             $table->id();
+            $table->string('plate_number', length: 20);
             $table->tinyInteger('available_seats')->default(12);
             $table->timestamps();
         });

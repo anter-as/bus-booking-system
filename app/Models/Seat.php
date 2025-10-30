@@ -6,11 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Trip extends Model
+class Seat extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'bus_id', 'starts_at'];
+    public $timestamps = false;
+
+    protected $fillable = ['bus_id', 'name'];
 
     public function bus(): BelongsTo
     {
